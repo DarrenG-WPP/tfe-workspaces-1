@@ -1,7 +1,7 @@
 ///////////////////////////////////////////
 resource "tfe_workspace" "app1" {
   name         = "app1"
-  organization = "emea-se-playground-2019"
+  organization = var.org
 }
 
 resource "tfe_team_access" "app1" {
@@ -23,7 +23,7 @@ resource "tfe_team_access" "app1" {
 //////////////////////////////////////////
 resource "tfe_workspace" "app2" {
   name         = "app2"
-  organization = "emea-se-playground-2019"
+  organization = var.org
 }
 
 resource "tfe_team_access" "app2" {

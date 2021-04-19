@@ -6,6 +6,11 @@ terraform {
   }
 }
 
+provider "tfe" {
+  hostname = var.hostname
+  token    = var.token
+}
+
 resource "tfe_team" "team" {
   name         = "team1"
   organization = "emea-se-playground-2019"
