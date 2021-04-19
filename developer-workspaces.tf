@@ -5,7 +5,7 @@ resource "tfe_workspace" "app3" {
 }
 
 resource "tfe_team_access" "app3" {
-  team_id      = tfe_team.team.id
+  team_id      = tfe_team.developer.id
   workspace_id = tfe_workspace.app1.id
   permissions {
     runs              = "apply"
@@ -27,7 +27,7 @@ resource "tfe_workspace" "app4" {
 }
 
 resource "tfe_team_access" "app4" {
-  team_id      = tfe_team.team.id
+  team_id      = tfe_team.developer.id
   workspace_id = tfe_workspace.app2.id
   permissions {
     runs              = "apply"
