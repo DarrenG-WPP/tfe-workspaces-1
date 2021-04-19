@@ -1,7 +1,7 @@
 ///////////////////////////////////////////
 resource "tfe_workspace" "app1" {
   name         = "app1"
-  organization = tfe_org.org.id
+  organization = tfe_organization.org.id
 }
 
 resource "tfe_team_access" "app1" {
@@ -23,7 +23,7 @@ resource "tfe_team_access" "app1" {
 //////////////////////////////////////////
 resource "tfe_workspace" "app2" {
   name         = "app2"
-  organization = tfe_org.org.id
+  organization = tfe_organization.org.id
 }
 
 resource "tfe_team_access" "app2" {
