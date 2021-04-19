@@ -6,4 +6,6 @@ variable "hostname" {
     description = "TFE hostname"
 }
 
-variable "org" {}
+variable "org" {
+    description = "name of organisation to create"
+}
