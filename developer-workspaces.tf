@@ -6,7 +6,7 @@ resource "tfe_workspace" "app3" {
 
 resource "tfe_team_access" "app3" {
   team_id      = tfe_team.developer.id
-  workspace_id = tfe_workspace.app1.id
+  workspace_id = tfe_workspace.app3.id
   permissions {
     runs              = "apply"
     variables         = "write"
